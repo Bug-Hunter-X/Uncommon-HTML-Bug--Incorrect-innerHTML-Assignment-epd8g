@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    //Incorrect way to access innerHTML - missing quotes around attribute value
+    document.getElementById(myDiv).innerHTML = <p>This is new text.</p>;
+  </script>
+</body>
+</html>
